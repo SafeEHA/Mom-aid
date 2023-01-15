@@ -1,0 +1,171 @@
+:root {
+    --maroon: #24050d ;
+    --deeppink: #fb6f92; 
+    --pink: #ffbbcc; 
+    --lightpink: #ffe5ec;
+    --grey: #9d8189; 
+    --white: #fefefe; 
+  }
+body {
+  font-family: "Poppins";
+}
+
+.container {
+  height: 844px;
+  position: relative;
+  background-image: url(./assets/background.jpg);
+}
+.wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  width: 508px;
+  height: 721px;
+  left: 40%;
+  top: 10%;
+  border-radius: 8px;
+  margin: -50px 0 0 -50px;
+  background: #ffffff;
+  border: 1px solid #ffbbcc;
+  box-shadow: -8px 4px 8px rgba(251, 111, 146, 0.5);
+}
+.btn {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  left: 13rem;
+  top: 375px;
+  background: #fb6f92;
+  border-radius: 8px;
+}
+
+.buttomtext {
+  position: absolute;
+  left: 160px;
+  top: 455px;
+  font-style: normal;
+  font-size: 11px;
+  color:var(--maroon);
+}
+.signup-text {
+  text-decoration: none;
+  color: #fb6f92;
+}
+.title {
+  position: absolute;
+  width: 102px;
+  height: 36px;
+  left: 13rem;
+  top: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fb6f92;
+}
+.welcome-text {
+  position: absolute;
+  width: 279px;
+  height: 31px;
+  left: 8rem;
+  top: 100px;
+  font-size: 12px;
+  line-height: 1px;
+  text-align: center;
+
+  color: #24050d;
+}
+.text-field1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 350px;
+  height: 37px;
+  left: 80px;
+  top: 165px;
+  border: 1px solid #ffbbcc;
+  border-radius: 10px;
+}
+.field-title1 {
+  position: absolute;
+  width: 86px;
+  height: 25px;
+  left: 80px;
+  top: 136px;
+  color: #24050d;
+}
+.text-field2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 350px;
+  height: 37px;
+  left: 80px;
+  top: 257px;
+  border: 1px solid #ffbbcc;
+  border-radius: 10px;
+  background-image: url(./assets/Vector.png);
+  background-position: 20rem;
+  background-repeat: no-repeat;
+}
+.field-title2 {
+  position: absolute;
+  left: 80px;
+  top: 228px;
+  color: #24050d;
+}
+
+.checker {
+  position: absolute;
+  left: 80px;
+  top: 318px;
+  font-size: 13px;
+  color: #24050d;
+}
+.text-buttom {
+  position: absolute;
+  width: 101px;
+  height: 17px;
+  left: 330px;
+  top: 295px;
+  font-family: "Poppins";
+  font-size: 11px;
+  color: #fb6f92;
+}
+@media(max-width:480px){
+    
+   .wrapper{
+    height: 200vh;
+    width: 90vw;
+    margin-left: -9rem;
+    display: flex;
+    
+   }
+   .title{
+    left: 9rem;
+   }
+   .text-buttom {
+    left: 15rem;
+   }
+   .text-field1 {
+    left: 3rem;
+    width: 18rem
+   }
+   .text-field2 {
+    left: 3rem;
+    width: 18rem;
+   }
+   .field-title1{
+    left: 3rem;
+   }
+   .field-title2{
+    left: 3rem;
+   }
+   .checker{
+    left: 3rem;
+   }
+   .btn{
+    left: 8rem;
+   }
+   .welcome-text{
+    left: 3rem;
+   }
+   .buttomtext{
+    left: 5rem;
+   }
+  }
