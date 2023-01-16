@@ -17,14 +17,17 @@ This project was bootstrapped with [Vite](https://vitejs.dev/guide/).
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+
+Installs the app and prepares it for running it in the development mode.
 
 ### `npm run dev`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
