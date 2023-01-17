@@ -1,11 +1,12 @@
 :root {
-    --maroon: #24050d ;
-    --deeppink: #fb6f92; 
-    --pink: #ffbbcc; 
-    --lightpink: #ffe5ec;
-    --grey: #9d8189; 
-    --white: #fefefe; 
-  }
+  --maroon: #24050d;
+  --deeppink: #fb6f92;
+  --pink: #ffbbcc;
+  --lightpink: #ffe5ec;
+  --grey: #9d8189;
+  --white: #fefefe;
+}
+
 body {
   font-family: "Poppins";
 }
@@ -15,6 +16,7 @@ body {
   position: relative;
   background-image: url(./assets/background.jpg);
 }
+
 .wrapper {
   box-sizing: border-box;
   position: absolute;
@@ -28,6 +30,7 @@ body {
   border: 1px solid #ffbbcc;
   box-shadow: -8px 4px 8px rgba(251, 111, 146, 0.5);
 }
+
 .btn {
   position: absolute;
   width: 120px;
@@ -38,18 +41,11 @@ body {
   border-radius: 8px;
 }
 
-.buttomtext {
-  position: absolute;
-  left: 160px;
-  top: 455px;
-  font-style: normal;
-  font-size: 11px;
-  color:var(--maroon);
-}
 .signup-text {
   text-decoration: none;
   color: #fb6f92;
 }
+
 .title {
   position: absolute;
   width: 102px;
@@ -60,18 +56,7 @@ body {
   line-height: 36px;
   color: #fb6f92;
 }
-.welcome-text {
-  position: absolute;
-  width: 279px;
-  height: 31px;
-  left: 8rem;
-  top: 100px;
-  font-size: 12px;
-  line-height: 1px;
-  text-align: center;
 
-  color: #24050d;
-}
 .text-field1 {
   box-sizing: border-box;
   position: absolute;
@@ -82,6 +67,7 @@ body {
   border: 1px solid #ffbbcc;
   border-radius: 10px;
 }
+
 .field-title1 {
   position: absolute;
   width: 86px;
@@ -90,6 +76,7 @@ body {
   top: 136px;
   color: #24050d;
 }
+
 .text-field2 {
   box-sizing: border-box;
   position: absolute;
@@ -103,6 +90,7 @@ body {
   background-position: 20rem;
   background-repeat: no-repeat;
 }
+
 .field-title2 {
   position: absolute;
   left: 80px;
@@ -110,62 +98,130 @@ body {
   color: #24050d;
 }
 
-.checker {
-  position: absolute;
-  left: 80px;
-  top: 318px;
-  font-size: 13px;
-  color: #24050d;
-}
-.text-buttom {
-  position: absolute;
-  width: 101px;
-  height: 17px;
-  left: 330px;
-  top: 295px;
-  font-family: "Poppins";
-  font-size: 11px;
-  color: #fb6f92;
-}
-@media(max-width:480px){
-    
-   .wrapper{
+@media (max-width: 480px) {
+  .wrapper {
     height: 200vh;
     width: 90vw;
     margin-left: -9rem;
     display: flex;
-    
-   }
-   .title{
+  }
+  .title {
     left: 9rem;
-   }
-   .text-buttom {
+  }
+  .text-buttom {
     left: 15rem;
-   }
-   .text-field1 {
-    left: 3rem;
-    width: 18rem
-   }
-   .text-field2 {
+  }
+  .text-field1 {
     left: 3rem;
     width: 18rem;
-   }
-   .field-title1{
-    left: 3rem;
-   }
-   .field-title2{
-    left: 3rem;
-   }
-   .checker{
-    left: 3rem;
-   }
-   .btn{
-    left: 8rem;
-   }
-   .welcome-text{
-    left: 3rem;
-   }
-   .buttomtext{
-    left: 5rem;
-   }
   }
+  .text-field2 {
+    left: 3rem;
+    width: 18rem;
+  }
+  .field-title1 {
+    left: 3rem;
+  }
+  .field-title2 {
+    left: 3rem;
+  }
+  .checker {
+    left: 3rem;
+  }
+  .btn {
+    left: 8rem;
+  }
+  .welcome-text {
+    left: 3rem;
+  }
+  .buttomtext {
+    left: 5rem;
+  }
+}
+
+/* Community Post Page */
+
+.title-header {
+  margin-right: 10px;
+  color: #fb6f92;
+}
+.field-subject {
+  box-sizing: border-box;
+  font-family: inherit;
+
+  position: relative;
+  width: 100%;
+  height: 36px;
+  left: 0vh;
+
+  background: #ffffff;
+  border: 1px solid #9d8189;
+  border-radius: 8px;
+}
+
+.field-message {
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+  width: 100%;
+  height: 319px;
+  left: 0vh;
+  background: #ffffff;
+  border: 1px solid #9d8189;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+._btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-block: 4px;
+  left: 0vh;
+  top: 70vh;
+  background: #fb6f92;
+  border-radius: 2px;
+  border: none;
+}
+._btn2{
+
+  height: 40px;
+  border: none;
+  background: none;
+  
+}
+._container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffbbcc;
+  border-radius: 8px;
+  padding-inline: 20px;
+}
+
+._header {
+  background: #fefefe;
+  text-align: center;
+}
+
+.btm-text{
+  margin-top: 24px;
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.form-buttons button {
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btm-checker{
+  display: flex;
+  justify-content: flex-start;
+}
