@@ -76,6 +76,43 @@ body {
   font-weight: bold;
 }
 
+/*styling for community page*/
+.CommunityPage__title1 {
+color: var(--pink);
+}
+
+.CommunityPage__heading1 {
+  color: var(--maroon);
+}
+
+.CommunityPage__text1, ul{
+  color: var(--grey);
+}
+
+.HotTopics {
+  display: flex;
+}
+
+.hotTopic__1 {
+  border: 2px solid var(--maroon);
+}
+
+.CommunityPage__SideTab {
+  background-color:var(--maroon);
+}
+
+.SideTab__title {
+  color: var(--deeppink);
+}
+
+.SideTab__list {
+  color: var(--pink);
+}
+
+.CommunityPage__Content {
+  display: flex;
+}
+
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
 
