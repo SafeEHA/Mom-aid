@@ -23,6 +23,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
 /*Launch Page styling*/
 .launchPage {
   background-image: url(./assets/desktop-image.png);
@@ -71,6 +72,7 @@ body {
   font-weight: bold;
 }
 
+
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
   /*Launch Page styling*/
@@ -92,7 +94,6 @@ body {
 
   .launchPage__motherhood {
     color: var(--deeppink);
-   }
+  }
 }
-
 
