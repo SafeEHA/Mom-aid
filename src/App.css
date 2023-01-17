@@ -27,9 +27,10 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 /*Launch Page styling*/
 .launchPage {
-  background-image: url(./assets/desktopimage.png);
+  background-image: url(./assets/desktop-image.png);
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
@@ -66,7 +67,7 @@ body {
   border-bottom: 3px solid var(--maroon);
   display: block;
   left: 50%;
-  transform:  translateX(-50%);
+  transform: translateX(-50%);
   font-weight: bold;
 }
 
@@ -77,6 +78,7 @@ body {
 
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
+
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
@@ -85,17 +87,16 @@ body {
     background-size: cover;
   }
 
-  .launchPage__catchphrase  {
+  .launchPage__catchphrase {
     color: var(--white);
   }
 
   .launchPage__link {
-      color: var(--deeppink);
-      border-bottom: 2px solid var(--pink);
+    color: var(--deeppink);
+    border-bottom: 2px solid var(--pink);
   }
 
   .launchPage__motherhood {
     color: var(--deeppink);
   }
 }
-
