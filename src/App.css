@@ -101,6 +101,15 @@ body {
   color:var(--maroon);
 }
 /*styling the content*/
+.CommunityPage__container {
+  padding-inline:28px ;
+}
+
+.CommunityPage__description {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
 .CommunityPage__title1 {
 color: var(--pink);
 }
@@ -109,18 +118,29 @@ color: var(--pink);
   color: var(--maroon);
 }
 
-.CommunityPage__text1, ul{
+.CommunityPage__text, ul{
   color: var(--grey);
+}
+
+.CommunityPage__text {
+  max-width: 440px;
 }
 
 .HotTopics {
   display: flex;
   border: 2px solid var(--lightpink);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hotTopics__container {
+  flex-basis: 65%;
 }
 
 .searchButton {
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 button {
@@ -134,12 +154,25 @@ button {
   font-weight: bold;
 }
 
+.hotTopic__1__image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hotTopic__1__image > img {
+width: 350px;
+height: 350px;
+object-fit: contain;
+}
+
 .CommunityPage__SideTab {
   background-color:var(--maroon);
+  flex-basis: 35%;
 }
 
 .SideTab__title {
   color: var(--deeppink);
+  padding-left: 1rem;
 }
 
 .SideTab__list {
@@ -148,7 +181,7 @@ button {
 
 .CommunityPage__Content {
   display: flex;
-  justify-content: space-between;
+  gap: 7rem;
 }
 
 /*STYLING FOR MOBILE VIEW*/
