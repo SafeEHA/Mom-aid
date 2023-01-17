@@ -5,25 +5,25 @@ const CommunitySideTab = () => {
     <>
       <h2 className="SideTab__title">PREGNANCY</h2>
 
-      <ul className="SideTab__list">
-        <li>Pregnancy Due Date Calculator</li>
-        <li>Labor and Delivery</li>
-        <li>Pregnancy Week by Week</li>
-        <li>Pregnancy Symptoms</li>
-        <li>Morning Sickness</li>
-        <li>Pregnancy Weight Gain Calculator</li>
-        <li>Fetal Development</li>
-        <li>Pregnancy Complications</li>
-        <li>Screenings and Tests</li>
-        <li>Preparing for Baby</li>
-        <li>Baby Names</li>
-        <li>Top Baby Names for Boys</li>
-        <li>Top baby Names for girls</li>
-        <li>Best Gender Neutral Names</li>
-        <li>Chinese Gender Predictor</li>
-        <li>Signs of Labor</li>
-        <li>Braxton Hicks and False Labor</li>
-        <li>Welcoming Your New Born</li>
+      <ul className="SideTab__lists">
+        <li className="SideTab__list">Pregnancy Due Date Calculator</li>
+        <li className="SideTab__list">Labor and Delivery</li>
+        <li className="SideTab__list">Pregnancy Week by Week</li>
+        <li className="SideTab__list">Pregnancy Symptoms</li>
+        <li className="SideTab__list">Morning Sickness</li>
+        <li className="SideTab__list">Pregnancy Weight Gain Calculator</li>
+        <li className="SideTab__list">Fetal Development</li>
+        <li className="SideTab__list">Pregnancy Complications</li>
+        <li className="SideTab__list">Screenings and Tests</li>
+        <li className="SideTab__list">Preparing for Baby</li>
+        <li className="SideTab__list">Baby Names</li>
+        <li className="SideTab__list">Top Baby Names for Boys</li>
+        <li className="SideTab__list">Top baby Names for girls</li>
+        <li className="SideTab__list">Best Gender Neutral Names</li>
+        <li className="SideTab__list">Chinese Gender Predictor</li>
+        <li className="SideTab__list">Signs of Labor</li>
+        <li className="SideTab__list">Braxton Hicks and False Labor</li>
+        <li className="SideTab__list">Welcoming Your New Born</li>
       </ul>
     </>
   );

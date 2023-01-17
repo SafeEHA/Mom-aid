@@ -1,8 +1,10 @@
 import { hotTopic } from "../data/hotTopic";
+import { moreTopic } from "../data/moreTopic";
 import CommunityNav from "./CommunityNav";
 import CommunitySearch from "./CommunitySearch";
 import CommunitySideTab from "./CommunitySideTab";
 import HotTopics from "./HotTopics";
+import MoreTopics from "./MoreTopics";
 
 function CommunityPage() {
   return (
@@ -31,10 +33,23 @@ function CommunityPage() {
               />
             ))}
           </div>
+          
           <div className="CommunityPage__SideTab">
             <CommunitySideTab />
           </div>
+          
         </div>
+        <h3 className="CommunityPage__title1">More Topics</h3>
+        <div className="moreTopics__container">
+            {moreTopic.map((topic, i) => (
+              <MoreTopics
+                key={i}
+                title={topic.title}
+                text={topic.text}
+                lists={topic.lists}
+              />
+            ))}
+          </div>
       </div>
     </div>
   );
