@@ -1,40 +1,41 @@
+/*Universal Styling*/
 html {
   font-size: 100%;
   box-sizing: border-box;
 }
 
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 :root {
-  --maroon: #24050d ;
-  --deeppink: #fb6f92; 
-  --pink: #ffbbcc; 
+  --maroon: #24050d;
+  --deeppink: #fb6f92;
+  --pink: #ffbbcc;
   --lightpink: #ffe5ec;
-  --grey: #9d8189; 
-  --white: #fefefe; 
+  --grey: #9d8189;
+  --white: #fefefe;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-
+/*Launch Page styling*/
 .launchPage {
-  background-image: url(./assets/desktopimage.png);
-background-repeat: no-repeat;
-min-height: 100vh;
-background-size: cover;
-position: relative;
-text-align: center;
-
+  background-image: url(./assets/desktop-image.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
-.launchPage > div{
+.launchPage>div {
   padding-block: 2rem;
   height: 100%;
-
 }
 
 .launchPage__title {
@@ -42,15 +43,16 @@ text-align: center;
   text-align: center;
   margin-top: 2rem;
 }
- .launchPage__catchphrase {
+
+.launchPage__catchphrase {
   position: absolute;
   bottom: 8rem;
   color: var(--maroon);
   left: 50%;
-  transform:translateX(-50%)
- }
+  transform: translateX(-50%)
+}
 
- .launchPage__link {
+.launchPage__link {
   position: absolute;
   bottom: 4rem;
   color: var(--maroon);
@@ -60,36 +62,37 @@ text-align: center;
   border-bottom: 3px solid var(--maroon);
   display: block;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   font-weight: bold;
- }
+}
 
- .launchPage__motherhood {
+.launchPage__motherhood {
   color: var(--deeppink);
   font-weight: bold;
- }
+}
 
-
-
-
-
-@media(max-width:480px){
+/*STYLING FOR MOBILE VIEW*/
+@media(max-width:480px) {
+  /*Launch Page styling*/
   .launchPage {
-    background-image: url(./assets/mobileimage.png);
+    background-image: url(./assets/mobile-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .launchPage__catchphrase{
+
+  .launchPage__catchphrase {
     color: var(--white);
   }
+
   .launchPage__link {
-  color: var(--deeppink);
-  border-bottom: 2px solid var(--pink);
+    color: var(--deeppink);
+    border-bottom: 2px solid var(--pink);
   }
 
   .launchPage__motherhood {
     color: var(--deeppink);
    }
 }
+
 
