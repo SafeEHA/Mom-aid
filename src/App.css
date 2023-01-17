@@ -1,4 +1,3 @@
-
 /*Universal Styling*/
 html {
   font-size: 100%;
@@ -11,7 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-
 :root {
   --maroon: #24050d;
   --deeppink: #fb6f92;
@@ -22,7 +20,6 @@ html {
 }
 
 body {
-
   font-family: "Poppins";
 }
 
@@ -197,12 +194,10 @@ body {
   border-radius: 2px;
   border: none;
 }
-._btn2{
-
+._btn2 {
   height: 40px;
   border: none;
   background: none;
-  
 }
 ._container {
   position: relative;
@@ -221,11 +216,11 @@ body {
   text-align: center;
 }
 
-.btm-text{
+.btm-text {
   margin-top: 24px;
 }
 
-.form-buttons{
+.form-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
@@ -236,11 +231,10 @@ body {
   font-size: 20px;
 }
 
-.btm-checker{
+.btm-checker {
   display: flex;
   justify-content: flex-start;
 }
- 
 
 /*Launch Page styling*/
 .launchPage {
@@ -252,7 +246,7 @@ body {
   text-align: center;
 }
 
-.launchPage>div {
+.launchPage > div {
   padding-block: 2rem;
   height: 100%;
 }
@@ -268,7 +262,7 @@ body {
   bottom: 8rem;
   color: var(--maroon);
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .launchPage__link {
@@ -291,7 +285,7 @@ body {
 }
 
 /*STYLING FOR MOBILE VIEW*/
-@media(max-width:480px) {
+@media (max-width: 480px) {
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
@@ -311,5 +305,5 @@ body {
 
   .launchPage__motherhood {
     color: var(--deeppink);
-   }
+  }
 }
