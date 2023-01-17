@@ -77,6 +77,30 @@ body {
 }
 
 /*styling for community page*/
+
+/*styling the nav bar*/
+.navbar {
+  background-color:var(--pink);
+  padding: 10px;
+  border-radius: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navtabs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar a {
+  margin-inline: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color:var(--maroon);
+}
+/*styling the content*/
 .CommunityPage__title1 {
 color: var(--pink);
 }
@@ -91,10 +115,23 @@ color: var(--pink);
 
 .HotTopics {
   display: flex;
+  border: 2px solid var(--lightpink);
 }
 
-.hotTopic__1 {
-  border: 2px solid var(--maroon);
+.searchButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: var(--deeppink);
+  color: var(--maroon);
+  border: none;
+  border-radius: 8px;
+  width: 4rem;
+  height: 1.8rem;
+  font-size: large;
+  font-weight: bold;
 }
 
 .CommunityPage__SideTab {
@@ -111,6 +148,7 @@ color: var(--pink);
 
 .CommunityPage__Content {
   display: flex;
+  justify-content: space-between;
 }
 
 /*STYLING FOR MOBILE VIEW*/

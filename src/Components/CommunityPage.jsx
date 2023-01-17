@@ -1,15 +1,22 @@
-import { NavLink } from "react-router-dom";
+
+import feedingBaby from "../assets/feeding-baby.png";
+import CommunityNav from "./CommunityNav";
+import CommunitySearch from "./CommunitySearch";
+import CommunitySideTab from "./CommunitySideTab";
 
 function CommunityPage() {
   return (
     <div className="CommunityPage">
       <div className="CommunityPage__container">
-        <nav>
-          <NavLink>Community</NavLink>
-          <NavLink>Log In</NavLink>
-          <NavLink>posts</NavLink>
-          <NavLink>Article</NavLink>
-        </nav>
+        <CommunityNav/>
+        <div className="searchButton">
+          <CommunitySearch/>
+        </div>
+
+        <p>
+          Discover posts from popular topics and other topics from our community
+          members. You can also start a new topic.
+        </p>
       </div>
       <h1 className="CommunityPage__title1">Hot Topics</h1>
       <div className="CommunityPage__Content">
@@ -21,7 +28,7 @@ function CommunityPage() {
             <p className="CommunityPage__text1">
               Everything you need to know about breastfeeding, from tips,
               <br />
-              best positions and benefits to how to trouble-shoot problems,{" "}
+              best positions and benefits to how to trouble-shoot problems,
               <br />
               breastfeed in public, pump and wean your babies.
             </p>
@@ -35,32 +42,11 @@ function CommunityPage() {
             <button>More</button>
           </div>
           <div className="hotTopic__1__image">
-            <img src="./assets/feeding-baby.png" alt="feeding baby" />
+            <img src={feedingBaby} alt="feeding baby" />
           </div>
         </div>
         <div className="CommunityPage__SideTab">
-          <h2 className="SideTab__title">PREGNANCY</h2>
-
-          <ul className="SideTab__list">
-            <li>Pregnancy Due Date Calculator</li>
-            <li>Labor and Delivery</li>
-            <li>Pregnancy Week by Week</li>
-            <li>Pregnancy Symptoms</li>
-            <li>Morning Sickness</li>
-            <li>Pregnancy Weight Gain Calculator</li>
-            <li>Fetal Development</li>
-            <li>Pregnancy Complications</li>
-            <li>Screenings and Tests</li>
-            <li>Preparing for Baby</li>
-            <li>Baby Names</li>
-            <li>Top Baby Names for Boys</li>
-            <li>Top baby Names for girls</li>
-            <li>Best Gender Neutral Names</li>
-            <li>Chinese Gender Predictor</li>
-            <li>Signs of Labor</li>
-            <li>Braxton Hicks and False Labor</li>
-            <li>Welcoming Your New Born</li>
-          </ul>
+          <CommunitySideTab />
         </div>
       </div>
     </div>
