@@ -7,9 +7,6 @@ html {
 *,
 *::before,
 *::after {
-*,
-*::before,
-*::after {
   box-sizing: inherit;
 }
 
@@ -41,7 +38,6 @@ body {
 }
 
 .launchPage>div {
-.launchPage>div {
   padding-block: 2rem;
   height: 100%;
 }
@@ -53,18 +49,13 @@ body {
 }
 
 .launchPage__catchphrase {
-
-.launchPage__catchphrase {
   position: absolute;
   bottom: 8rem;
   color: var(--maroon);
   left: 50%;
   transform: translateX(-50%)
 }
-  transform: translateX(-50%)
-}
 
-.launchPage__link {
 .launchPage__link {
   position: absolute;
   bottom: 4rem;
@@ -78,17 +69,12 @@ body {
   transform:  translateX(-50%);
   font-weight: bold;
 }
-}
 
-.launchPage__motherhood {
 .launchPage__motherhood {
   color: var(--deeppink);
   font-weight: bold;
 }
-}
 
-
-@media(max-width:480px) {
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
   /*Launch Page styling*/
@@ -99,11 +85,9 @@ body {
     background-size: cover;
   }
 
-
   .launchPage__catchphrase  {
     color: var(--white);
   }
-
 
   .launchPage__link {
       color: var(--deeppink);
