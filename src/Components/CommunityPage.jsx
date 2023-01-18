@@ -30,26 +30,25 @@ function CommunityPage() {
                 title={topic.title}
                 text={topic.text}
                 lists={topic.lists}
+                image={topic.image}
               />
             ))}
+
+            <h3 className="CommunityPage__title2">More Topics</h3>
+            <div className="moreTopics__container">
+              {moreTopic.map((topic, i) => (
+                <MoreTopics
+                  key={i}
+                  title={topic.title}
+                />
+              ))}
+            </div>
           </div>
-          
+
           <div className="CommunityPage__SideTab">
             <CommunitySideTab />
           </div>
-          
         </div>
-        <h3 className="CommunityPage__title1">More Topics</h3>
-        <div className="moreTopics__container">
-            {moreTopic.map((topic, i) => (
-              <MoreTopics
-                key={i}
-                title={topic.title}
-                text={topic.text}
-                lists={topic.lists}
-              />
-            ))}
-          </div>
       </div>
     </div>
   );

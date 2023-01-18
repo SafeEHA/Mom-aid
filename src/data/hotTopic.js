@@ -1,3 +1,7 @@
+import feedingBaby from "../assets/feeding-baby.jpg"
+import colic from "../assets/colic.jpg"
+import PPD from "../assets/PPD.jpg"
+
 export const hotTopic=[
     {
         title:"Post about Breastfeeding",
@@ -8,7 +12,8 @@ export const hotTopic=[
         "Hurting Nipples!!!",
         "Supplementary Feeding at 2 Weeks",
         "Lactation Cookies",
-        "Blood in Breastmilk",]
+        "Blood in Breastmilk"],
+        image:feedingBaby
     },
 
     {
@@ -21,7 +26,8 @@ export const hotTopic=[
         "Postpartum Psychosis",
         "Separation Anxiety?",
         "Overwhelmed and Alone",
-        "Postpartum Rage",]
+        "Postpartum Rage"],
+        image:PPD
     },
 
     {
@@ -32,6 +38,7 @@ export const hotTopic=[
         "Gassy baby Causes",
         "What are the Best Remedies for Baby Gas Relief?",
         "Can Breastfeeding Make Baby Gassy?",
-        "At what Age does Colic Stops?",]
+        "At what Age does Colic Stops?"],
+        image:colic
     },
 ]
