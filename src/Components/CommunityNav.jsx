@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import CommunityNavMenu from "./CommunityNavMenu";
 
 const CommunityNav = () => {
-  let activeStyle = { padding: "2px 0", borderBottom: "4px solid #ffb3c6" };
+  let activeStyle = { padding: "2px 0", borderBottom: "4px solid var(--lightpink)" };
 
   const [openMenu, setOpenMenu]=useState(false)
   return (

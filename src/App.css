@@ -231,7 +231,7 @@ ul {
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
 
-  /*Launch Page styling*/
+  /*Launch Page styling for mobile screen*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
     background-position: center;
@@ -252,6 +252,7 @@ ul {
     color: var(--deeppink);
   }
 
+  /*Community page styling for mobile screen*/
   .CommunityPage__SideTab,
   .CommunityPage__text,
   .HotTopics__list,
@@ -270,7 +271,7 @@ ul {
   }
 
   .hotTopics__container {
-    flex-basis: 150%;
+    flex-basis: 100%;
   }
 
   .hamburgerMenu span {
@@ -315,14 +316,14 @@ ul {
   }
 
   .navbar {
-    padding: 20px 20px;
+    padding: 16px 20px;
   }
 
   .navMenu {
     position: fixed;
     top: 0;
     right: 0;
-    width: min(75%, 200px);
+    width: min(75%, 250px);
     background-color: var(--white);
     padding-block: 40px;
     list-style: none;
@@ -338,10 +339,16 @@ ul {
   }
 
   .CommunityPage__title2 {
-    margin: 1rem 0;
+    margin-bottom: 10px ;
+    margin-top: 12px;
   }
 
   .CommunityPage__heading1 {
-    margin-top: 4px;
+    margin-top: 1px;
+  }
+
+  .CommunityPage__description {
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
 }
