@@ -10,6 +10,7 @@ const CommunityNav = () => {
     <>
       <nav className="navbar">
         <h3>MOMAID</h3>
+        <h3 className="pageHeader">Community</h3>
         <div className="navtabs">
           <NavLink
             style={({ isActive }) => (isActive ? activeStyle : undefined)}

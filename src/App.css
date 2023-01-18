@@ -72,7 +72,7 @@ body {
   font-weight: bold;
 }
 
-/*STYLING FR COMMUNITY PAGE*/
+/*STYLING FOR COMMUNITY PAGE*/
 
 /*styling the nav bar*/
 .navbar {
@@ -95,6 +95,11 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: var(--maroon);
+}
+
+.pageHeader {
+  border-bottom: 2px solid var(--maroon);
+  display: none;
 }
 
 /*styling the content*/
@@ -310,7 +315,7 @@ ul {
   }
 
   .navbar {
-    padding: 8px 28px;
+    padding: 20px 20px;
   }
 
   .navMenu {
@@ -326,6 +331,10 @@ ul {
   .navMenu li a {
     margin-bottom: 8px;
     text-decoration: none;
+  }
+
+  .pageHeader {
+    display: block;
   }
 
   .CommunityPage__title2 {

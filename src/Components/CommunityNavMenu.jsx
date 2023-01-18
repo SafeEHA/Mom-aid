@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const CommunityNavMenu = () => {
-    let activeStyle = { padding: "2px 0", borderBottom: "4px solid #ffb3c6" };
+  let activeStyle = { padding: "2px 0", borderBottom: "4px solid #ffb3c6" };
   return (
     <ul className="navMenu">
       <li>

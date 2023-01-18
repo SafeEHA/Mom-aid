@@ -37,10 +37,7 @@ function CommunityPage() {
             <h3 className="CommunityPage__title2">More Topics</h3>
             <div className="moreTopics__container">
               {moreTopic.map((topic, i) => (
-                <MoreTopics
-                  key={i}
-                  title={topic.title}
-                />
+                <MoreTopics key={i} title={topic.title} />
               ))}
             </div>
           </div>
