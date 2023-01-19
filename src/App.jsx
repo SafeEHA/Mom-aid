@@ -1,10 +1,11 @@
 import LaunchPage from "./Components/LaunchPage";
 import "./App.css";
+import CommPostDetail from "./Components/CommPostDetail";
 
 function App() {
   return (
     <div className="container">
-      <LaunchPage />
+      <CommPostDetail/>
     </div>
   );
 }
