@@ -23,7 +23,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 /*Launch Page styling*/
 .launchPage {
   background-image: url(./assets/desktop-image.png);
@@ -86,7 +85,6 @@ body {
   padding-left: 0.6rem;
   padding-top: 0.1rem;
   color: var(--lightpink);
-
 }
 
 .topicTitle {
@@ -114,7 +112,7 @@ i {
   width: 36px;
   height: 36px;
   background-image: url(./assets/expand-arrow.png);
-  background-size:cover;
+  background-size: cover;
   margin-top: 0;
 }
 
@@ -127,26 +125,29 @@ i {
   width: 24px;
   height: 24px;
   background-image: url(./assets/reply-arrow.png);
-  background-size:cover;}
+  background-size: cover;
+}
 
-  .like__icon {
-    width: 24px;
-    height: 24px;
-    background-image: url(./assets/heart.png);
-    background-size:cover;}
+.like__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/heart.png);
+  background-size: cover;
+}
 
-  .activity__icons {
-    display: flex;
-    gap: 2rem;
-  } 
+.activity__icons {
+  display: flex;
+  gap: 2rem;
+}
 
-  .icons__div {
-    display: flex;
-    justify-content: space-between;
-  }
+.icons__div {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
+
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
@@ -168,6 +169,3 @@ i {
     color: var(--deeppink);
   }
 }
-
-
-
