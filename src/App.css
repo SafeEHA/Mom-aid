@@ -72,6 +72,40 @@ body {
   font-weight: bold;
 }
 
+/*Styling Community post detail page*/
+.nameTag {
+  display: flex;
+}
+
+.nameLogo {
+  margin-top: 1em;
+  background-color: var(--grey);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 16px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  color: var(--lightpink);
+
+}
+
+.topicTitle {
+  background-color: var(--pink);
+  width: fit-content;
+}
+
+.posterName {
+  margin-left: 8px;
+}
+
+aside {
+  color: var(--pink);
+}
+
+i {
+  font-size: x-small;
+}
+
 
 /*STYLING FOR MOBILE VIEW*/
 @media(max-width:480px) {
@@ -96,4 +130,6 @@ body {
     color: var(--deeppink);
   }
 }
+
+
 
