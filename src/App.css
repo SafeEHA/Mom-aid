@@ -238,6 +238,7 @@ form > div {
   justify-content: flex-start;
 }
 
+
 /*Launch Page styling*/
 .launchPage {
   background-image: url(./assets/desktop-image.png);
@@ -286,6 +287,7 @@ form > div {
   font-weight: bold;
 }
 
+
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
   /*Launch Page styling*/
@@ -308,6 +310,7 @@ form > div {
   .launchPage__motherhood {
     color: var(--deeppink);
   }
+
 }
 /* modal */
 
@@ -403,3 +406,7 @@ form > div {
   background-position: right;
   background-size: contain;
 }
+
+}
+
+
