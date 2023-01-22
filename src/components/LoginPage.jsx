@@ -6,63 +6,72 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  
+
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    
-    validateUsername(e);
-    validatePassword(e);
-    
+   const validatedUsername = validateUsername(e);
+   const validatedPassword = validatePassword(e);
+
     const validateLogin = (username, password) => {
       return true;
-}
-    if (validateLogin (username, password)){
-      localStorage.setItem('username', username)
-      localStorage.setItem('password', password)
+    };
+    if (validatedUsername && validatedPassword) {
+      localStorage.setItem("username", JSON.stringify(username));
+      localStorage.setItem("password", JSON.stringify(password));
+      
       setIsLoggedIn(true);
-  
     }
-   
+
+    setUsername('')
+    setPassword('')
+    //navigation occurs here
+
   };
 
-  // const handleUsername = (e) => {
-  //   validateUsername(e);
-    
-  // };
-
   const validateUsername = (e) => {
-    const pattern = /^[a-zA-Z0-9]*$/;
-
+    const pattern = /^(?=.*[a-zA-Z])(?=.*[0-9])[A-Za-z0-9]+$/;
     if (username.length < 4) {
       setUsernameError("Username must be atleast 4 characters long");
-    }else if (!pattern.test(username)) {
+      return false
+    }
+    if (!pattern.test(username)) {
+      console.log("test")
+  
       setUsernameError(
         "Username can only contain alphanumeric characters and should not include special characters or spaces."
       );
-    } else {
-      setUsernameError("");
-    }
+      return false
+    } 
+    setUsernameError("");
+    return true
   };
-  const handlePassword = (e) => {
-    
-   ;
-  };
+  // const handlePassword = (e) => {};
   const validatePassword = (e) => {
     const value = e.target.value;
     const pattern =
       /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#\$%\^&\*])[a-zA-Z\d!@#\$%\^&\*]{4,}$/;
-    if (!pattern.test(value)) {
+    if (!pattern.test(password)) {
       setPasswordError(
         "Password must be at least 4 characters long, include at least 1 alphabet, 1 digit and 1 symbol."
       );
+      return false
     } else {
       setPasswordError("");
+      return true
     }
   };
-  
- 
+
+//   useEffect(() => {
+// const user = JSON.parse(localStorage.getItem('username'))
+// if (user){
+//   console.log(user);
+// }
+//   },[])
+
   return (
     <div className="container">
       <div className="wrapper">
@@ -84,7 +93,9 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
               onChange={(e) => setUsername(e.target.value)}
             />
             {usernameError && (
-              <p className={`error-message ${usernameError ? "show" : ""}`}>{usernameError}</p>
+              <p className={`error-message ${usernameError ? "show" : ""}`}>
+                {usernameError}
+              </p>
             )}
           </div>
 
@@ -100,9 +111,11 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
               className="text-field2"
               placeholder=" 4 - 8 characters"
               onChange={(e) => setPassword(e.target.value)}
-          />
+            />
             {passwordError && (
-              <p className={`error-message ${passwordError ? "show" : ""}`}>{passwordError}</p>
+              <p className={`error-message ${passwordError ? "show" : ""}`}>
+                {passwordError}
+              </p>
             )}
           </div>
 
