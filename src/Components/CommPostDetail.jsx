@@ -11,8 +11,8 @@ function CommPostDetail() {
           </div>
           <div className="nameTag">
             <div className="nameLogo">M</div>
+            <h6 className="posterName">By MimiCoolMom</h6>
           </div>
-          <h6 className="posterName">By MimiCoolMom</h6>
 
           <div className="collapsible__content">
             <p>

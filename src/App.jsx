@@ -4,7 +4,7 @@ import CommPostDetail from "./Components/CommPostDetail";
 function App() {
   return (
     <div className="container">
-      <CommPostDetail/>
+      <CommPostDetail />
     </div>
   );
 }
