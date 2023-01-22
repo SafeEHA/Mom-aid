@@ -8,20 +8,20 @@ import HotTopics from "./HotTopics";
 import MoreTopics from "./MoreTopics";
 
 function CommunityPage() {
-  const [search,setSearch] = useState("")
-  const filteredHotTopics = hotTopic.filter(topic =>{
-    return topic.title.toLowerCase().includes(search.toLowerCase())
+  const [search, setSearch] = useState("");
+  const filteredHotTopics = hotTopic.filter((topic) => {
+    return topic.title.toLowerCase().includes(search.toLowerCase());
   });
 
-  const filteredMoreTopics = moreTopic.filter(topic =>{
-    return topic.title.toLowerCase().includes(search.toLowerCase())
+  const filteredMoreTopics = moreTopic.filter((topic) => {
+    return topic.title.toLowerCase().includes(search.toLowerCase());
   });
   return (
     <div className="CommunityPage">
       <CommunityNav />
       <div className="CommunityPage__container">
         <div className="searchButton">
-          <CommunitySearch search={search} setSearch={setSearch}/>
+          <CommunitySearch search={search} setSearch={setSearch} />
         </div>
 
         <h3 className="CommunityPage__description">

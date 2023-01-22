@@ -3,9 +3,12 @@ import { NavLink } from "react-router-dom";
 import CommunityNavMenu from "./CommunityNavMenu";
 
 const CommunityNav = () => {
-  let activeStyle = { padding: "2px 0", borderBottom: "4px solid var(--lightpink)" };
+  let activeStyle = {
+    padding: "2px 0",
+    borderBottom: "4px solid var(--lightpink)",
+  };
 
-  const [openMenu, setOpenMenu]=useState(false)
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <nav className="navbar">
@@ -28,11 +31,14 @@ const CommunityNav = () => {
             Article
           </NavLink>
         </div>
-        <button className="hamburgerMenu" onClick={()=>setOpenMenu(m=>!m)}>
+        <button
+          className="hamburgerMenu"
+          onClick={() => setOpenMenu((m) => !m)}
+        >
           <span></span> <span></span> <span></span>
         </button>
       </nav>
-     {openMenu? <CommunityNavMenu />:null}
+      {openMenu ? <CommunityNavMenu /> : null}
     </>
   );
 };
