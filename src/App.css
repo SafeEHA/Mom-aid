@@ -99,6 +99,10 @@ body {
   color: var(--maroon);
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 .pageHeader {
   border-bottom: 2px solid var(--maroon);
   display: none;
@@ -173,6 +177,7 @@ ul {
   font-size: large;
   font-weight: bold;
   border: none;
+  border-radius: 8px;
 }
 
 .hotTopics__btn {
@@ -290,6 +295,7 @@ ul {
     border: 1px solid var(--maroon);
     position: relative;
     z-index: 10;
+    display: block;
   }
 
   .SearchLabel input[type="text"] {
