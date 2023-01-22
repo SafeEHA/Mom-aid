@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { hotTopic } from "../data/hotTopic";
 import { moreTopic } from "../data/moreTopic";
 import CommunityNav from "./CommunityNav";
@@ -7,12 +8,20 @@ import HotTopics from "./HotTopics";
 import MoreTopics from "./MoreTopics";
 
 function CommunityPage() {
+  const [search,setSearch] = useState("")
+  const filteredHotTopics = hotTopic.filter(topic =>{
+    return topic.title.toLowerCase().includes(search.toLowerCase())
+  });
+
+  const filteredMoreTopics = moreTopic.filter(topic =>{
+    return topic.title.toLowerCase().includes(search.toLowerCase())
+  });
   return (
     <div className="CommunityPage">
       <CommunityNav />
       <div className="CommunityPage__container">
         <div className="searchButton">
-          <CommunitySearch />
+          <CommunitySearch search={search} setSearch={setSearch}/>
         </div>
 
         <h3 className="CommunityPage__description">
@@ -24,7 +33,7 @@ function CommunityPage() {
         <h3 className="CommunityPage__title1">Hot Topics</h3>
         <div className="CommunityPage__Content">
           <div className="hotTopics__container">
-            {hotTopic.map((topic, i) => (
+            {filteredHotTopics.map((topic, i) => (
               <HotTopics
                 key={i}
                 title={topic.title}
@@ -36,7 +45,7 @@ function CommunityPage() {
 
             <h3 className="CommunityPage__title2">More Topics</h3>
             <div className="moreTopics__container">
-              {moreTopic.map((topic, i) => (
+              {filteredMoreTopics.map((topic, i) => (
                 <MoreTopics key={i} title={topic.title} />
               ))}
             </div>

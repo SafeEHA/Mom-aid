@@ -3,7 +3,7 @@ const MoreTopics = ({ title, text, lists }) => {
     <>
       <div className="MoreTopics">
         <div className="moreTopic__1">
-          <h4 className="CommunityPage__heading1">{title}</h4>
+          <h4 className="CommunityPage__heading1"> Post about {title}</h4>
         </div>
       </div>
     </>
