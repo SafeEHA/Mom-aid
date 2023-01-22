@@ -6,17 +6,14 @@ import LaunchPage from "./Components/LaunchPage";
 function App() {
 
   return (
-  <div>
-    <Routes>
-    <Route element={<LaunchPage />} path="/"/>
-      <Route element={<LoginPage />} path="login"/>
-      <Route element={<CommunityPostPage />} path="post"/>
-    
-    </Routes>
-   
-  </div>
-
-  )
+    <div>
+      <Routes>
+      <Route element={<LaunchPage />} path="/"/>
+        <Route element={<LoginPage />} path="/login"/>
+        <Route element={<CommunityPostPage />} path="/post"/>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
