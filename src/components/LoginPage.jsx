@@ -9,11 +9,12 @@ const LoginPage = () => {
         </div>
 
         <div>
-          <label for="" className="field-title1">
+          <label for="username" className="field-title1">
             Username
           </label>
           <br />
           <input
+            name="username"
             type="text"
             className="text-field1"
             placeholder=" not more than 8 characters"
@@ -21,12 +22,14 @@ const LoginPage = () => {
         </div>
 
         <div>
-          <label for="" className="field-title2">
+          <label for="password" className="field-title2">
             Password
           </label>
           <br />
           <input
+            name="password"
             type="text"
+            for=""
             className="text-field2"
             placeholder=" 6-10 characters"
           ></input>
