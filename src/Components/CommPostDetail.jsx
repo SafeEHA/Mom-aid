@@ -1,6 +1,11 @@
+import CommunityNav from "./CommunityNav";
+import CommunitySearch from "./CommunitySearch";
+
 function CommPostDetail() {
   return (
     <div className="CommPostDetail">
+      <CommunityNav />
+      <CommunitySearch />
       <div>
         <h3>Post About Breastfeeding</h3>
         <hr />
