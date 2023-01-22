@@ -7,14 +7,12 @@ const LoginPage = () => {
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
-
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-   const validatedUsername = validateUsername(e);
-   const validatedPassword = validatePassword(e);
+    const validatedUsername = validateUsername(e);
+    const validatedPassword = validatePassword(e);
 
     const validateLogin = (username, password) => {
       return true;
@@ -22,32 +20,31 @@ const LoginPage = () => {
     if (validatedUsername && validatedPassword) {
       localStorage.setItem("username", JSON.stringify(username));
       localStorage.setItem("password", JSON.stringify(password));
-      
+
       setIsLoggedIn(true);
     }
 
-    setUsername('')
-    setPassword('')
+    setUsername("");
+    setPassword("");
     //navigation occurs here
-
   };
 
   const validateUsername = (e) => {
     const pattern = /^(?=.*[a-zA-Z])(?=.*[0-9])[A-Za-z0-9]+$/;
     if (username.length < 4) {
       setUsernameError("Username must be atleast 4 characters long");
-      return false
+      return false;
     }
     if (!pattern.test(username)) {
-      console.log("test")
-  
+      console.log("test");
+
       setUsernameError(
         "Username can only contain alphanumeric characters and should not include special characters or spaces."
       );
-      return false
-    } 
+      return false;
+    }
     setUsernameError("");
-    return true
+    return true;
   };
   // const handlePassword = (e) => {};
   const validatePassword = (e) => {
@@ -58,19 +55,19 @@ const LoginPage = () => {
       setPasswordError(
         "Password must be at least 4 characters long, include at least 1 alphabet, 1 digit and 1 symbol."
       );
-      return false
+      return false;
     } else {
       setPasswordError("");
-      return true
+      return true;
     }
   };
 
-//   useEffect(() => {
-// const user = JSON.parse(localStorage.getItem('username'))
-// if (user){
-//   console.log(user);
-// }
-//   },[])
+  //   useEffect(() => {
+  // const user = JSON.parse(localStorage.getItem('username'))
+  // if (user){
+  //   console.log(user);
+  // }
+  //   },[])
 
   return (
     <div className="container">

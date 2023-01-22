@@ -73,6 +73,7 @@ form {
 form > div {
   margin-bottom: 1rem;
 }
+
 .signup-text {
   text-decoration: none;
   color: #fb6f92;
@@ -119,6 +120,7 @@ form > div {
   margin-right: 10px;
   color: #fb6f92;
 }
+
 .field-subject {
   box-sizing: border-box;
   font-family: inherit;
@@ -155,11 +157,13 @@ form > div {
   border-radius: 2px;
   border: none;
 }
+
 ._btn2 {
   height: 40px;
   border: none;
   background: none;
 }
+
 ._container {
   position: relative;
   height: 100vh;
@@ -196,7 +200,6 @@ form > div {
   display: flex;
   justify-content: flex-start;
 }
-
 
 /*Launch Page styling*/
 .launchPage {
@@ -246,7 +249,6 @@ form > div {
   font-weight: bold;
 }
 
-
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
   /*Launch Page styling*/
@@ -269,7 +271,6 @@ form > div {
   .launchPage__motherhood {
     color: var(--deeppink);
   }
-
 }
 /* modal */
 
@@ -325,7 +326,6 @@ form > div {
   border-radius: 8px;
   margin-inline: 2rem;
   margin-left: 15px;
-  
 }
 
 .circle {
@@ -345,11 +345,11 @@ form > div {
   font-size: larger;
   margin-left: 0.4rem;
 }
+
 .reply-btn-icon {
   background-image: url(./assets/Vector.png);
   background-repeat: no-repeat;
   background-position: right;
-
 }
 
 .user-name {
