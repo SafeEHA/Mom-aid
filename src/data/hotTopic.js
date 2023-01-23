@@ -4,7 +4,7 @@ import PPD from "../assets/PPD.jpg"
 
 export const hotTopic=[
     {
-        title:"Post about Breastfeeding",
+        title:"Breastfeeding",
         text:`Everything you need to know about breastfeeding, from tips,
         best positions and benefits to how to trouble-shoot problems,
         breastfeed in public, pump and wean your babies.`,
@@ -17,7 +17,7 @@ export const hotTopic=[
     },
 
     {
-        title:"Post about Postpartum depression",
+        title:"Postpartum depression",
         text:`Many women experience mood swings - sometimes called the "baby blues" 
         right after delivery, but about 10-15% of moms experience a more serious
         problem known as postpartum depression (PPD) and should consult their doctors.
@@ -31,7 +31,7 @@ export const hotTopic=[
     },
 
     {
-        title:"Post about Colic",
+        title:"Colic",
         text:`Is your baby gassy? Here's what causes infant gas 
         and the best treatments for baby gas relief.`,
         lists:[ "Why is my Baby so Gassy?",
