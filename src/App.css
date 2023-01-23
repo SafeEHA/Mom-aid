@@ -539,7 +539,6 @@ ul {
   color: var(--maroon);
 }
 
-
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
 
@@ -665,3 +664,4 @@ ul {
     margin-bottom: 16px;
   }
 }
+

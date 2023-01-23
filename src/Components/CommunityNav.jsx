@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CommunityNavMenu from "./CommunityNavMenu";
 
+
 const tabs = ["Community", "Posts", "Article"];
 const activeStyle = {
   padding: "2px 0",
@@ -11,6 +12,7 @@ const activeStyle = {
 const CommunityNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeNav, setActiveNav] = useState(undefined);
+
 
   return (
     <>
