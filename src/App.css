@@ -237,7 +237,6 @@ body {
   justify-content: flex-start;
 }
 
-
 /*Launch Page styling*/
 .launchPage {
   background-image: url(./assets/desktop-image.png);
@@ -286,6 +285,79 @@ body {
   font-weight: bold;
 }
 
+/*Styling Community post detail page*/
+.nameTag {
+  display: flex;
+}
+
+.nameLogo {
+  margin-top: 1em;
+  background-color: var(--grey);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 16px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  color: var(--lightpink);
+}
+
+.topicTitle {
+  background-color: var(--pink);
+  width: fit-content;
+}
+
+.posterName {
+  margin-left: 8px;
+}
+
+aside {
+  color: var(--pink);
+}
+
+i {
+  font-size: x-small;
+}
+
+.collapsible__content p {
+  margin: 0;
+}
+
+.expand {
+  width: 36px;
+  height: 36px;
+  background-image: url(./assets/expand-arrow.png);
+  background-size: cover;
+  margin-top: 0;
+}
+
+.icon__display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reply__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/reply-arrow.png);
+  background-size: cover;
+}
+
+.like__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/heart.png);
+  background-size: cover;
+}
+
+.activity__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icons__div {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*STYLING FOR COMMUNITY PAGE*/
 
