@@ -20,7 +20,220 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins";
+}
+
+.container {
+  height: 844px;
+  position: relative;
+  background-image: url(./assets/background.jpg);
+}
+
+.wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  width: 508px;
+  height: 721px;
+  left: 40%;
+  top: 10%;
+  border-radius: 8px;
+  margin: -50px 0 0 -50px;
+  background: #ffffff;
+  border: 1px solid #ffbbcc;
+  box-shadow: -8px 4px 8px rgba(251, 111, 146, 0.5);
+}
+
+.btn {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  left: 13rem;
+  top: 375px;
+  background: #fb6f92;
+  border-radius: 8px;
+}
+
+.signup-text {
+  text-decoration: none;
+  color: #fb6f92;
+}
+
+.title {
+  position: absolute;
+  width: 102px;
+  height: 36px;
+  left: 13rem;
+  top: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fb6f92;
+}
+
+.text-field1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 350px;
+  height: 37px;
+  left: 80px;
+  top: 165px;
+  border: 1px solid #ffbbcc;
+  border-radius: 10px;
+}
+
+.field-title1 {
+  position: absolute;
+  width: 86px;
+  height: 25px;
+  left: 80px;
+  top: 136px;
+  color: #24050d;
+}
+
+.text-field2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 350px;
+  height: 37px;
+  left: 80px;
+  top: 257px;
+  border: 1px solid #ffbbcc;
+  border-radius: 10px;
+  background-image: url(./assets/Vector.png);
+  background-position: 20rem;
+  background-repeat: no-repeat;
+}
+
+.field-title2 {
+  position: absolute;
+  left: 80px;
+  top: 228px;
+  color: #24050d;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    height: 200vh;
+    width: 90vw;
+    margin-left: -9rem;
+    display: flex;
+  }
+  .title {
+    left: 9rem;
+  }
+  .text-buttom {
+    left: 15rem;
+  }
+  .text-field1 {
+    left: 3rem;
+    width: 18rem;
+  }
+  .text-field2 {
+    left: 3rem;
+    width: 18rem;
+  }
+  .field-title1 {
+    left: 3rem;
+  }
+  .field-title2 {
+    left: 3rem;
+  }
+  .checker {
+    left: 3rem;
+  }
+  .btn {
+    left: 8rem;
+  }
+  .welcome-text {
+    left: 3rem;
+  }
+  .buttomtext {
+    left: 5rem;
+  }
+}
+
+/* Community Post Page */
+
+.title-header {
+  margin-right: 10px;
+  color: #fb6f92;
+}
+.field-subject {
+  box-sizing: border-box;
+  font-family: inherit;
+
+  position: relative;
+  width: 100%;
+  height: 36px;
+  left: 0vh;
+
+  background: #ffffff;
+  border: 1px solid #9d8189;
+  border-radius: 8px;
+}
+
+.field-message {
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+  width: 100%;
+  height: 319px;
+  left: 0vh;
+  background: #ffffff;
+  border: 1px solid #9d8189;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+._btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-block: 4px;
+  left: 0vh;
+  top: 70vh;
+  background: #fb6f92;
+  border-radius: 2px;
+  border: none;
+}
+._btn2 {
+  height: 40px;
+  border: none;
+  background: none;
+}
+._container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffbbcc;
+  border-radius: 8px;
+  padding-inline: 20px;
+}
+
+._header {
+  background: #fefefe;
+  text-align: center;
+}
+
+.btm-text {
+  margin-top: 24px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.form-buttons button {
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btm-checker {
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -34,7 +247,7 @@ body {
   text-align: center;
 }
 
-.launchPage>div {
+.launchPage > div {
   padding-block: 2rem;
   height: 100%;
 }
@@ -50,7 +263,7 @@ body {
   bottom: 8rem;
   color: var(--maroon);
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .launchPage__link {
@@ -74,7 +287,7 @@ body {
 
 
 /*STYLING FOR MOBILE VIEW*/
-@media(max-width:480px) {
+@media (max-width: 480px) {
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
@@ -96,4 +309,3 @@ body {
     color: var(--deeppink);
   }
 }
-
