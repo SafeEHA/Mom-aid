@@ -15,21 +15,11 @@ const CommunityNav = () => {
         <h3>MOMAID</h3>
         <h3 className="pageHeader">Community</h3>
         <div className="navtabs">
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            Community
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            Posts
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            Article
-          </NavLink>
+          {tabs.map(tab => (
+            <NavLink key={tab} style={{ activeNav === tab ? activeStyle : undefined }}>
+              {tab}
+            </NavLink>
+          ))}
         </div>
         <button className="hamburgerMenu" onClick={()=>setOpenMenu(m=>!m)}>
           <span></span> <span></span> <span></span>
