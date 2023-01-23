@@ -7,7 +7,7 @@ const CommunitySearch = () => {
         <label>Search</label>
         <input type="text" placeholder="Search Topics" />
       </div>
-      <button className="btn">New Post</button>
+      <button className="community__postbutton">New Post</button>
     </>
   );
 };
