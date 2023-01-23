@@ -2,6 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CommunityNavMenu from "./CommunityNavMenu";
 
+const tabs = ['Community', 'Posts', 'Article'];
+
 const CommunityNav = () => {
   let activeStyle = { padding: "2px 0", borderBottom: "4px solid var(--lightpink)" };
 
