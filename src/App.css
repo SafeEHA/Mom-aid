@@ -20,7 +20,8 @@ html {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white);
 }
 
 .container {
@@ -249,6 +250,242 @@ form > div {
   font-weight: bold;
 }
 
+/*Styling Community post detail page*/
+.nameTag {
+  display: flex;
+}
+
+.nameLogo {
+  margin-top: 1em;
+  background-color: var(--grey);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 16px;
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  color: var(--lightpink);
+}
+
+.topicTitle {
+  background-color: var(--pink);
+  width: fit-content;
+}
+
+.posterName {
+  margin-left: 8px;
+}
+
+aside {
+  color: var(--pink);
+}
+
+i {
+  font-size: x-small;
+}
+
+.collapsible__content p {
+  margin: 0;
+}
+
+.expand {
+  width: 36px;
+  height: 36px;
+  background-image: url(./assets/expand-arrow.png);
+  background-size: cover;
+  margin-top: 0;
+}
+
+.icon__display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reply__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/reply-arrow.png);
+  background-size: cover;
+}
+
+.like__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/heart.png);
+  background-size: cover;
+}
+
+.activity__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icons__div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*STYLING FOR COMMUNITY PAGE*/
+
+/*styling the nav bar*/
+.navbar {
+  background-color: var(--pink);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navtabs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar a {
+  margin-inline: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--maroon);
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.pageHeader {
+  border-bottom: 2px solid var(--maroon);
+  display: none;
+}
+
+/*styling the content*/
+.CommunityPage__container {
+  padding-inline: 28px;
+}
+
+.CommunityPage__description {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.CommunityPage__title1 {
+  color: var(--pink);
+  margin-bottom: 4px;
+}
+
+.CommunityPage__title2 {
+  color: var(--pink);
+  margin-top: 4rem;
+}
+
+.CommunityPage__heading1 {
+  color: var(--maroon);
+  font-size: larger;
+  font-weight: 500;
+  border-bottom: 2px solid var(--grey);
+  margin-top: 12px;
+}
+
+.CommunityPage__heading1:hover {
+  background-color: var(--pink);
+}
+
+.CommunityPage__text,
+ul {
+  color: var(--grey);
+}
+
+.CommunityPage__text {
+  max-width: 440px;
+}
+
+.CommunityPage__Content {
+  display: flex;
+  gap: 7rem;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.SearchLabel input {
+  padding: 8px;
+  border: 2px solid var(--lightpink);
+  border-radius: 8px;
+  width: 20rem;
+  margin-left: 10px;
+}
+
+.btn {
+  width: 10rem;
+  height: 2.2rem;
+  background-color: var(--deeppink);
+  color: var(--maroon);
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.hotTopics__btn {
+  color: var(--pink);
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  width: 4rem;
+  height: 1.8rem;
+}
+
+.HotTopics {
+  display: flex;
+  border: 2px solid var(--lightpink);
+  border-radius: 8px;
+  box-shadow: var(--deeppink) -3px 3px 9px;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hotTopics__container {
+  flex-basis: 65%;
+}
+
+.hotTopic__image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hotTopic__image>img {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/*Styling of Side Tab*/
+.CommunityPage__SideTab {
+  background-color: var(--maroon);
+  flex-basis: 35%;
+}
+
+.SideTab__title {
+  color: var(--deeppink);
+  padding-left: 4rem;
+}
+
+.SideTab__list {
+  color: var(--pink);
+  margin: 1.5em;
+}
+
+.SideTab__list:hover {
+  background-color: var(--pink);
+  color: var(--maroon);
+}
+
+
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
   /*Launch Page styling*/
@@ -270,6 +507,107 @@ form > div {
 
   .launchPage__motherhood {
     color: var(--deeppink);
+  }
+
+  /*Community page styling for mobile screen*/
+  .CommunityPage__SideTab,
+  .CommunityPage__text,
+  .HotTopics__list,
+  .hotTopic__1__image,
+  .hotTopics__btn,
+  .hotTopic__image,
+  .navtabs {
+    display: none;
+  }
+
+  .HotTopics {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .hotTopics__container {
+    flex-basis: 100%;
+  }
+
+  .hamburgerMenu span {
+    display: block;
+    background-color: var(--maroon);
+    width: 28px;
+    height: 4px;
+    margin-bottom: 4px;
+  }
+
+  .hamburgerMenu {
+    background-color: transparent;
+    border: 1px solid var(--maroon);
+    position: relative;
+    z-index: 10;
+    display: block;
+  }
+
+  .SearchLabel input[type="text"] {
+    padding: 8px;
+    width: 10rem;
+    margin-left: 0;
+  }
+
+  .SearchLabel label {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .btn {
+    width: fit-content;
+    height: auto;
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .searchButton {
+    align-items: flex-end;
+  }
+
+  .navbar h3 {
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(75%, 250px);
+    background-color: var(--white);
+    padding-block: 40px;
+    list-style: none;
+  }
+
+  .navMenu li a {
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .pageHeader {
+    display: block;
+  }
+
+  .CommunityPage__title2 {
+    margin-bottom: 10px ;
+    margin-top: 12px;
+  }
+
+  .CommunityPage__heading1 {
+    margin-top: 1px;
+  }
+
+  .CommunityPage__description {
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
 }
 /* modal */

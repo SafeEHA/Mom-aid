@@ -95,7 +95,6 @@ const LoginPage = () => {
               </p>
             )}
           </div>
-
           <div>
             <label htmlFor="password" className="field-title2">
               Password
@@ -115,7 +114,6 @@ const LoginPage = () => {
               </p>
             )}
           </div>
-
           <button className="btn" type="submit">
             LOGIN
           </button>
