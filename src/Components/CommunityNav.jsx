@@ -5,7 +5,8 @@ import CommunityNavMenu from "./CommunityNavMenu";
 const CommunityNav = () => {
   let activeStyle = { padding: "2px 0", borderBottom: "4px solid var(--lightpink)" };
 
-  const [openMenu, setOpenMenu]=useState(false)
+  const [openMenu, setOpenMenu]=useState(false);
+  const [activeNav, setActiveNav]=useState(undefined);
   return (
     <>
       <nav className="navbar">
