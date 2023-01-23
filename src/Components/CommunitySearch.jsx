@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CommunitySearch = () => {
   return (
@@ -7,7 +8,9 @@ const CommunitySearch = () => {
         <label>Search</label>
         <input type="text" placeholder="Search Topics" />
       </div>
-      <button className="btn">New Post</button>
+      <Link to="/post" className="community__postbutton">
+        New Post
+      </Link>
     </>
   );
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function LaunchPage() {
   return (
     <div className="launchPage">
@@ -7,7 +9,9 @@ function LaunchPage() {
           Let’s hold your hands through this life changing journey called
           <span className="launchPage__motherhood"> Motherhood.</span>{" "}
         </p>
-        <a className="launchPage__link">Get Started</a>
+        <Link to="/login" className="launchPage__link">
+          Get Started
+        </Link>
       </div>
     </div>
   );
