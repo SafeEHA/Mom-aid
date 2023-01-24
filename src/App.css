@@ -114,57 +114,6 @@ form > div {
 .field-title2 {
   color: #24050d;
 }
- implement/post-detail
-@media (max-width: 480px) {
-  .wrapper {
-    height: 200vh;
-    width: 90vw;
-    margin-left: -9rem;
-    display: flex;
-  }
-
-  .title {
-    left: 9rem;
-  }
-
-  .text-buttom {
-    left: 15rem;
-  }
-
-  .text-field1 {
-    left: 3rem;
-    width: 18rem;
-  }
-
-  .text-field2 {
-    left: 3rem;
-    width: 18rem;
-  }
-
-  .field-title1 {
-    left: 3rem;
-  }
-
-  .field-title2 {
-    left: 3rem;
-  }
-
-  .checker {
-    left: 3rem;
-  }
-
-  .btn {
-    left: 8rem;
-  }
-
-  .welcome-text {
-    left: 3rem;
-  }
-
-  .buttomtext {
-    left: 5rem;
-  }
-}
 
 /* Community Post Page */
 
