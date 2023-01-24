@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+
+import { NavLink, Link } from "react-router-dom";
+
 import CommunityNavMenu from "./CommunityNavMenu";
 
 
@@ -11,22 +13,28 @@ const activeStyle = {
 
 const CommunityNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   const [activeNav, setActiveNav] = useState(undefined);
 
-
-  return (
+ return (
     <>
       <nav className="navbar">
         <h3>MOMAID</h3>
         <h3 className="pageHeader">Community</h3>
         <div className="navtabs">
-          {
-            // tabs.map(tab => (
-            //   <NavLink key={tab} style={{ activeNav === tab ? activeStyle : undefined }}>
-            //     {tab}
-            //   </NavLink>
-            // ))
-          }
+
+          {tabs.map((tab) => {
+            return (
+              <NavLink
+                to={`/${tab.toLowerCase()}`}
+                key={tab}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                {tab}
+              </NavLink>
+            );
+          })}
+
         </div>
         <button
           className="hamburgerMenu"

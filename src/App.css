@@ -441,6 +441,7 @@ i {
   font-weight: 500;
   border-bottom: 2px solid var(--grey);
   margin-top: 12px;
+  text-decoration: none;
 }
 
 .CommunityPage__heading1:hover {
@@ -485,6 +486,11 @@ ul {
   font-weight: bold;
   border: none;
   border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hotTopics__btn {
@@ -615,7 +621,7 @@ ul {
     display: block;
   }
 
-  .btn {
+  .community__postbutton {
     width: fit-content;
     height: auto;
     padding: 6px;

@@ -9,7 +9,9 @@ function CommPostDetail() {
   return (
     <div className="CommPostDetail">
       <CommunityNav />
-      <CommunitySearch />
+      <div className="searchButton">
+        <CommunitySearch />
+      </div>
       <div>
         <h3>Post About Breastfeeding</h3>
         <hr />

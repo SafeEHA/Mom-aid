@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CommunitySearch = ({ search, setSearch }) => {
   return (
@@ -12,7 +13,11 @@ const CommunitySearch = ({ search, setSearch }) => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <button className="community__postbutton">New Post</button>
+
+      <Link to="/post" className="community__postbutton">
+        New Post
+      </Link>
+
     </>
   );
 };
