@@ -13,9 +13,11 @@ const CommunitySearch = ({ search, setSearch }) => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+
       <Link to="/post" className="community__postbutton">
         New Post
       </Link>
+
     </>
   );
 };

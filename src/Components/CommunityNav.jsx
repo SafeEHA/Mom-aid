@@ -1,7 +1,9 @@
 import { useState } from "react";
+
 import { NavLink, Link } from "react-router-dom";
 
 import CommunityNavMenu from "./CommunityNavMenu";
+
 
 const tabs = ["Community", "Posts", "Article"];
 const activeStyle = {
@@ -12,12 +14,15 @@ const activeStyle = {
 const CommunityNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  return (
+  const [activeNav, setActiveNav] = useState(undefined);
+
+ return (
     <>
       <nav className="navbar">
         <h3>MOMAID</h3>
         <h3 className="pageHeader">Community</h3>
         <div className="navtabs">
+
           {tabs.map((tab) => {
             return (
               <NavLink
@@ -29,6 +34,7 @@ const CommunityNav = () => {
               </NavLink>
             );
           })}
+
         </div>
         <button
           className="hamburgerMenu"
