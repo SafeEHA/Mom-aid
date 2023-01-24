@@ -212,7 +212,7 @@ form > div {
   text-align: center;
 }
 
-.launchPage > div {
+.launchPage>div {
   padding-block: 2rem;
   height: 100%;
 }
@@ -269,14 +269,20 @@ form > div {
 .topicTitle {
   background-color: var(--pink);
   width: fit-content;
+  color: var(--maroon);
+}
+
+.topicComment {
+  color: var(--maroon);
 }
 
 .posterName {
   margin-left: 8px;
+  color: var(--maroon);
 }
 
 aside {
-  color: var(--pink);
+  color: var(--deeppink);
 }
 
 i {
@@ -384,6 +390,7 @@ i {
   font-weight: 500;
   border-bottom: 2px solid var(--grey);
   margin-top: 12px;
+  text-decoration: none;
 }
 
 .CommunityPage__heading1:hover {
@@ -419,7 +426,7 @@ ul {
   margin-left: 10px;
 }
 
-.btn {
+.community__postbutton {
   width: 10rem;
   height: 2.2rem;
   background-color: var(--deeppink);
@@ -428,6 +435,11 @@ ul {
   font-weight: bold;
   border: none;
   border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hotTopics__btn {
@@ -487,6 +499,7 @@ ul {
 
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
+
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);
@@ -557,7 +570,7 @@ ul {
     display: block;
   }
 
-  .btn {
+  .community__postbutton {
     width: fit-content;
     height: auto;
     padding: 6px;

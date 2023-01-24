@@ -1,27 +1,40 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+
+import { NavLink, Link } from "react-router-dom";
 
 import CommunityNavMenu from "./CommunityNavMenu";
 
 
-const tabs = ['Community', 'Posts', 'Article'];
-const activeStyle = { padding: "2px 0", borderBottom: "4px solid var(--lightpink)" };
+const tabs = ["Community", "Posts", "Article"];
+const activeStyle = {
+  padding: "2px 0",
+  borderBottom: "4px solid var(--lightpink)",
+};
 
 const CommunityNav = () => {
-  const [openMenu, setOpenMenu]=useState(false);
-  const [activeNav, setActiveNav]=useState(undefined);
+  const [openMenu, setOpenMenu] = useState(false);
 
-  return (
+  const [activeNav, setActiveNav] = useState(undefined);
+
+ return (
     <>
       <nav className="navbar">
         <h3>MOMAID</h3>
         <h3 className="pageHeader">Community</h3>
         <div className="navtabs">
-          {tabs.map(tab => (
-            <NavLink key={tab} style={{ activeNav === tab ? activeStyle : undefined }}>
-              {tab}
-            </NavLink>
-          ))}
+
+          {tabs.map((tab) => {
+            return (
+              <NavLink
+                to={`/${tab.toLowerCase()}`}
+                key={tab}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                {tab}
+              </NavLink>
+            );
+          })}
+
         </div>
         <button
           className="hamburgerMenu"

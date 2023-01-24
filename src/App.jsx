@@ -3,7 +3,7 @@ import CommunityPostDetail from "./Components/CommPostDetail";
 import CommunityPage from "./Components/CommunityPage";
 import CommunityPostPage from "./components/CommunityPostPage";
 import LaunchPage from "./Components/LaunchPage";
-import LoginPage from './components/LoginPage'
+import LoginPage from './components/LoginPage';
 import PostReply from "./components/PostReply";
 
 import "./App.css";

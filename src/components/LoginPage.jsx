@@ -46,7 +46,7 @@ const LoginPage = () => {
     setUsernameError("");
     return true;
   };
-  // const handlePassword = (e) => {};
+
   const validatePassword = (e) => {
     const value = e.target.value;
     const pattern =
