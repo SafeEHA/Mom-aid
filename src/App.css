@@ -114,6 +114,57 @@ form > div {
 .field-title2 {
   color: #24050d;
 }
+ implement/post-detail
+@media (max-width: 480px) {
+  .wrapper {
+    height: 200vh;
+    width: 90vw;
+    margin-left: -9rem;
+    display: flex;
+  }
+
+  .title {
+    left: 9rem;
+  }
+
+  .text-buttom {
+    left: 15rem;
+  }
+
+  .text-field1 {
+    left: 3rem;
+    width: 18rem;
+  }
+
+  .text-field2 {
+    left: 3rem;
+    width: 18rem;
+  }
+
+  .field-title1 {
+    left: 3rem;
+  }
+
+  .field-title2 {
+    left: 3rem;
+  }
+
+  .checker {
+    left: 3rem;
+  }
+
+  .btn {
+    left: 8rem;
+  }
+
+  .welcome-text {
+    left: 3rem;
+  }
+
+  .buttomtext {
+    left: 5rem;
+  }
+}
 
 /* Community Post Page */
 
@@ -212,7 +263,7 @@ form > div {
   text-align: center;
 }
 
-.launchPage > div {
+.launchPage>div {
   padding-block: 2rem;
   height: 100%;
 }
@@ -269,14 +320,20 @@ form > div {
 .topicTitle {
   background-color: var(--pink);
   width: fit-content;
+  color: var(--maroon);
+}
+
+.topicComment {
+  color: var(--maroon);
 }
 
 .posterName {
   margin-left: 8px;
+  color: var(--maroon);
 }
 
 aside {
-  color: var(--pink);
+  color: var(--deeppink);
 }
 
 i {
@@ -419,7 +476,7 @@ ul {
   margin-left: 10px;
 }
 
-.btn {
+.community__postbutton {
   width: 10rem;
   height: 2.2rem;
   background-color: var(--deeppink);
@@ -487,6 +544,7 @@ ul {
 
 /*STYLING FOR MOBILE VIEW*/
 @media (max-width: 480px) {
+
   /*Launch Page styling*/
   .launchPage {
     background-image: url(./assets/mobile-image.png);

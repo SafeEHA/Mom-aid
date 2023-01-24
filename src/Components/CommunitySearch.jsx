@@ -12,7 +12,7 @@ const CommunitySearch = ({ search, setSearch }) => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <button className="btn">New Post</button>
+      <button className="community__postbutton">New Post</button>
     </>
   );
 };
