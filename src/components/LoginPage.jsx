@@ -1,12 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate()
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -14,14 +15,12 @@ const LoginPage = () => {
     const validatedUsername = validateUsername(e);
     const validatedPassword = validatePassword(e);
 
-    const validateLogin = (username, password) => {
-      return true;
-    };
+  
     if (validatedUsername && validatedPassword) {
       localStorage.setItem("username", JSON.stringify(username));
       localStorage.setItem("password", JSON.stringify(password));
 
-      setIsLoggedIn(true);
+     navigate("/community")
     }
 
     setUsername("");
@@ -62,12 +61,12 @@ const LoginPage = () => {
     }
   };
 
-  //   useEffect(() => {
-  // const user = JSON.parse(localStorage.getItem('username'))
-  // if (user){
-  //   console.log(user);
-  // }
-  //   },[])
+    useEffect(() => {
+  const user = JSON.parse(localStorage.getItem('username'))
+  if (user){
+    console.log(user);
+  }
+    },[])
 
   return (
     <div className="container">

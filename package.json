@@ -1,6 +1,5 @@
 {
   "name": "momaid-project",
-
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lines-ellipsis": "^0.15.3",
     "react-router-dom": "^6.7.0"
   },
   "devDependencies": {

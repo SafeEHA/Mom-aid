@@ -455,7 +455,7 @@ ul {
   border: 2px solid var(--lightpink);
   border-radius: 8px;
   box-shadow: var(--deeppink) -3px 3px 9px;
-  padding-left: 1rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 

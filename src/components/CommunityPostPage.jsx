@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { PostContext } from "../context/PostContext";
 
 const CommunityPostPage = () => {
+  const [handlePost, setHandlePost] = useState({
+    title: "",
+    content:"",
+    image:"",
+  });
+  const { handleSubmit } = useContext(PostContext);
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setHandlePost((prevPosts) => ({
+          ...prevPosts,
+          image: reader.result,
+        }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
   return (
     <>
       <div className="_header">
@@ -18,16 +39,35 @@ const CommunityPostPage = () => {
               type="text"
               className="field-subject"
               placeholder="Post Subject"
+              onChange={(e) => {
+                setHandlePost((prevPost) => ({ ...prevPost, title: e.target.value}));
+              }}
+            />
+          </div>
+          <div>
+            <input 
+            type="file"
+            className="field-subject"
+            placeholder="Choose file"
+            accept="image/*"
+            onChange={handleImageChange}
             />
           </div>
           <div>
             <textarea
               placeholder="Type a message"
               className="field-message"
+              onChange={(e) => {
+                setHandlePost((prevPost) => ({ ...prevPost, content: e.target.value}));
+              }}
             ></textarea>
           </div>
           <div className="form-buttons">
-            <button className="_btn" type="button">
+            <button className="_btn" type="button"
+            onClick={() => {
+              handleSubmit(handlePost);
+            }}
+            >
               Post
             </button>
             <button className="_btn2">Cancel</button>

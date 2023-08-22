@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { hotTopic } from "../data/hotTopic";
 import { moreTopic } from "../data/moreTopic";
 import CommunityNav from "./CommunityNav";
@@ -6,12 +6,15 @@ import CommunitySearch from "./CommunitySearch";
 import CommunitySideTab from "./CommunitySideTab";
 import HotTopics from "./HotTopics";
 import MoreTopics from "./MoreTopics";
+import { PostContext } from "../context/PostContext";
 
 function CommunityPage() {
   const [search, setSearch] = useState("");
-  const filteredHotTopics = hotTopic.filter((topic) => {
+  const { posts } = useContext(PostContext);
+  const filteredHotTopics = posts.filter((topic) => {
     return topic.title.toLowerCase().includes(search.toLowerCase());
   });
+  console.log(posts);
 
   const filteredMoreTopics = moreTopic.filter((topic) => {
     return topic.title.toLowerCase().includes(search.toLowerCase());
@@ -37,7 +40,7 @@ function CommunityPage() {
               <HotTopics
                 key={i}
                 title={topic.title}
-                text={topic.text}
+                text={topic.content}
                 lists={topic.lists}
                 image={topic.image}
               />
