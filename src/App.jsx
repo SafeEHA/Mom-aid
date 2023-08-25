@@ -5,7 +5,6 @@ import CommunityPostPage from "./Components/CommunityPostPage";
 import LaunchPage from "./Components/LaunchPage";
 import LoginPage from './Components/LoginPage';
 import PostReply from "./components/PostReply";
-// import { PostProvider } from "./src/context/PostContext";
 
 import "./App.css";
 import PostProvider from "./context/PostContext";
@@ -22,7 +21,7 @@ function App() {
         <Route element={<CommunityPostPage />} path="/post" />
         <Route element={<CommunityPostDetail />} path="/post-detail" />
         <Route element={<PostReply />} path="modal"/>
-        <Route element={<Article />} path="/article" />
+        <Route element={<Article />} path="/article/:id"/>
       </Routes>
       </PostProvider>
     </div>

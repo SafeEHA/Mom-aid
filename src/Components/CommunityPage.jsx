@@ -11,6 +11,9 @@ import { PostContext } from "../context/PostContext";
 function CommunityPage() {
   const [search, setSearch] = useState("");
   const { posts } = useContext(PostContext);
+  const hotTopics = posts.filter((post) => {
+    return post.likes > 5 
+  })
   const filteredHotTopics = posts.filter((topic) => {
     return topic.title.toLowerCase().includes(search.toLowerCase());
   });
@@ -43,13 +46,14 @@ function CommunityPage() {
                 text={topic.content}
                 lists={topic.lists}
                 image={topic.image}
+                id={topic.id}
               />
             ))}
 
             <h3 className="CommunityPage__title2">More Topics</h3>
             <div className="moreTopics__container">
               {filteredMoreTopics.map((topic, i) => (
-                <MoreTopics key={i} title={topic.title} />
+                <MoreTopics id={topic.id} key={i} title={topic.title} />
               ))}
             </div>
           </div>

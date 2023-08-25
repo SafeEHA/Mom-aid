@@ -6,6 +6,7 @@ const CommunityPostPage = () => {
     title: "",
     content:"",
     image:"",
+    likes: 0,
   });
   const { handleSubmit } = useContext(PostContext);
   const handleImageChange = (e) => {
