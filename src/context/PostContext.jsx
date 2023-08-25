@@ -32,7 +32,7 @@ export default function PostProvider({ children }) {
             if(res.ok){
                 setPosts((prevPost) => [...prevPost, handlePost])
                 navigate("/community")
-                window.location.reload
+                window.location.reload()
             }
         });
     }

@@ -1,6 +1,4 @@
 import { useContext, useState } from "react";
-import { hotTopic } from "../data/hotTopic";
-import { moreTopic } from "../data/moreTopic";
 import CommunityNav from "./CommunityNav";
 import CommunitySearch from "./CommunitySearch";
 import CommunitySideTab from "./CommunitySideTab";
@@ -14,12 +12,15 @@ function CommunityPage() {
   const hotTopics = posts.filter((post) => {
     return post.likes > 5 
   })
-  const filteredHotTopics = posts.filter((topic) => {
+  const filteredHotTopics = hotTopics.filter((topic) => {
     return topic.title.toLowerCase().includes(search.toLowerCase());
   });
   console.log(posts);
-
-  const filteredMoreTopics = moreTopic.filter((topic) => {
+  const topics = posts.filter((post) => {
+   return post.likes < 5
+  }
+  )
+  const filteredMoreTopics = topics.filter((topic) => {
     return topic.title.toLowerCase().includes(search.toLowerCase());
   });
   return (
